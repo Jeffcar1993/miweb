@@ -5,6 +5,8 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Proyectos from './pages/Proyectos'
 import Noticias from './pages/Noticias'
+import Live from './pages/Live'
+import Contactame from './pages/Contactame'
 
 
 function App() {
@@ -18,8 +20,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/proyectos" element={<Proyectos />} />
             <Route path="/noticias" element={<Noticias />} />
-            {/* <Route path="/en-vivo" element={<News />} />
-            <Route path="/contactame" element={<News />} /> */}
+            <Route path="/en-vivo" element={<Live />} />
+            <Route path="/contactame" element={<Contactame />} />
           </Routes>
         </main>
         <Footer />
