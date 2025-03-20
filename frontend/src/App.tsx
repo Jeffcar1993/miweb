@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Proyectos from './pages/Proyectos'
+import Noticias from './pages/Noticias'
 
 
 function App() {
@@ -16,8 +17,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/proyectos" element={<Proyectos />} />
-            {/* <Route path="/noticias" element={<Projects />} />
-            <Route path="/en-vivo" element={<News />} />
+            <Route path="/noticias" element={<Noticias />} />
+            {/* <Route path="/en-vivo" element={<News />} />
             <Route path="/contactame" element={<News />} /> */}
           </Routes>
         </main>
