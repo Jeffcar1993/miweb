@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
+import Proyectos from './pages/Proyectos'
 
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/proyectos" element={<About />} />
-            <Route path="/noticias" element={<Projects />} />
+            <Route path="/proyectos" element={<Proyectos />} />
+            {/* <Route path="/noticias" element={<Projects />} />
             <Route path="/en-vivo" element={<News />} />
             <Route path="/contactame" element={<News />} /> */}
           </Routes>
