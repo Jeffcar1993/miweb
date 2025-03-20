@@ -1,11 +1,27 @@
+import { BrowserRouter as Router, Routes } from 'react-router-dom'
 import './App.css'
+import Header from './components/header'
+import Footer from './components/Footer'
+
 
 function App() {
 
   return (
-    <h1 className="text-3xl text-red-500 font-bold underline">
-      Hello world!
-    </h1>
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-1">
+          <Routes>
+            {/* <Route path="/" element={<Home />} />
+            <Route path="/proyectos" element={<About />} />
+            <Route path="/noticias" element={<Projects />} />
+            <Route path="/en-vivo" element={<News />} />
+            <Route path="/contactame" element={<News />} /> */}
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 
